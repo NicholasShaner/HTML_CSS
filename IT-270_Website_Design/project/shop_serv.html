@@ -1,0 +1,104 @@
+<!--In Shop html page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>My Uncles Auto Shop | Shop Service</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="Img/favicon.png">
+    
+	<link rel="stylesheet" href="CSS/main.css"> 
+    <link rel="stylesheet" href="CSS/shop_serv.css"> <!--page specific stylesheet link-->
+
+</head>
+
+    
+<body>    
+    <header> 
+        <h1 id="head">Shop Service</h1>
+        <h2 id="sub_head">Come To <span style="font-size: 1.2em;">US</span> For Maintenance and Repair</h2>
+        <div id="nav_bar"> <!--Main nav links, inline styling for easy multipage access and adjustment-->
+            <a href="index.html" style=" padding: 0 5px;">Home</a>
+            <a href="shop_serv.html" style="font-size: 1.8rem; font-weight: bold; padding: 0 5px;">In Shop</a> <!--moving styling to emphasis current page link-->
+            <a href="mobile_serv.html" style=" padding: 0 5px;">Mobile</a>
+            <a href="fleet_serv.html" style=" padding: 0 5px;">Fleet</a>
+            <a href="about.html" style=" padding: 0 5px;">About</a>
+            <br>
+            <a href="contact.html" style="font-weight: 700; font-style: italic; padding: 10px 0;">Contact Us For Service Inquiries</a>
+        </div>
+    </header> 
+
+    <main class="shop_body">
+        <div id="shop_text"> <!--main text content explaining in shop services offered-->
+            <p>At <b style="color: rgb(22, 209, 22);">My Uncle's Auto Shop</b> we offer a state-of-the-art facilty capable
+                of the repair and maintenance of all makes, and models cars, trucks, SUVs, and motorcycles.</p>
+            <p>Scheduled preventative maintenance should always be a priority for you and your vehicle. Preventaive maintenance 
+                is not a repair, but as the name suggest, a preventative measure. Instead of waiting for your vehicle 
+                to break, and the potential of <b><i>THOUSANDS of $$</i></b> in unwanted repairs, incremented maintenances can be performed to 
+                make sure that those costly systems are fresh, clean and operating like new.</p>
+            <p>By sources our parts from multiple suppliers allows us to keep out prices as low as competitively possible.
+                This chart highlights some of the top services we offer and the unbelievabe prices we give out customers.</p>
+
+            <div id="video_layout"> <!--embedded video also transcribed as a hyperlink to additional information on subject (preventative maintenance)-->
+                <p>6 Reasons Car Mainentance is Important</p>
+                <!--Embedded video hyperlink to outside source of addtional resource-->
+                <a href="https://wrench.com/blog/6-reasons-car-maintenance-is-important/" title="6 Reasons Car Maintenance Is Important" target="_blank">
+                <video id="mainvid" src="vid/car repair.mp4" autoplay muted loop>Car Maintenance Video</video>
+                </a>
+            </div>
+        </div>
+
+        <div id="shop_chart"> <!--Pricing table of "most popular" services-->
+            <table id="shop_table">
+                <th colspan="2">Service Favorites</th>
+                <tr>
+                    <td id="tdl">Diagnostic Rate</td>
+                    <td>$75 per 1/2 hour</td>
+                </tr>
+                <tr>
+                    <td id="tdl">Repair Rate</td>
+                    <td>$100 per hour</td>
+                </tr>
+                <tr>
+                    <td id="tdl">Engine Oil and Filter Change</td>
+                    <td>$29.99+</td>
+                </tr>
+                <tr>
+                    <td id="tdl">Tire Rototion</td>
+                    <td>$14.99+</td>
+                </tr>
+                <tr>
+                    <td id="tdl">Brake Pad and Rotor Replacement</td>
+                    <td>$150 per axle</td>
+                </tr>
+                <tr>
+                    <td id="tdl">State Inspection</td>
+                    <td>$34.99</td>
+                </tr>
+            </table><br>
+            <!--Inline styling to save space and clutter of external styling sheet-->
+            <p style="text-decoration: italic; text-align: center;"><u style="font-weight: 800; color: rgb(22, 209, 22);">Everyday Specials!</u><br>
+                ➡️Free tire rotation with every Oil Change<br>
+                ➡️Free visual vehicle inspection with every service<br>
+                ➡️Multiple vehicle discount!
+            </p>
+        </div>
+
+    </main>    
+
+    <footer> <!--common footer across all pages with copyright and redundant nav links-->
+        <hr><br>
+        <div style="inline-block" class="redundant_nav">
+            <a href="index.html">Home</a>
+            <a href="shop_serv.html">In Shop</a>
+            <a href="mobile_serv.html">Mobile</a>
+            <a href="fleet_serv.html">Fleet</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        &copy; Nicholas Shaner IT-270 Oct. 2023
+    </footer>
+
+</body>
+</html>

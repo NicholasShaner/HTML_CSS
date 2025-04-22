@@ -1,0 +1,52 @@
+/* contact.css */
+
+/* form container styling */
+.contact_form {
+    font-size: 1.618rem;
+    text-align: center;
+}
+
+/* form input element styling */
+#my_info {
+    font-weight: 400;
+    display: inline-block;
+    border: 3px outset black;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+#contact_name, #contact_tel, #contact_email {
+    width: 40ch;
+    height: 2rem;
+    font-size: 1em;
+    padding-left: 15px;
+}
+#select {
+    transform: scale(1.618);
+    padding-left: 10px;
+    font-size: 1rem;
+}
+textarea {
+    font-size: 1.55rem;
+    height: 6rem; 
+    width: 28rem; 
+    border-radius: 5px;
+}
+textarea::placeholder {
+    color: rgb(22, 209, 22);
+}
+#contact_name::placeholder {
+    color: rgb(22, 209, 22);
+}
+#contact_tel::placeholder {
+    color: rgb(22, 209, 22);
+}
+#contact_email::placeholder {
+    color: rgb(22, 209, 22);
+}
+
+/* Submit button visual styling */
+button {
+    background-color: rgb(22, 209, 22);
+    font-weight: bold;
+}
+

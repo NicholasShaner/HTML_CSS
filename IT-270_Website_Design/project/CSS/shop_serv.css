@@ -1,0 +1,59 @@
+/* shop_serv.css */
+/* In Shop page specific styling*/
+
+.shop_body {
+    border: 3px solid black;
+    padding: 1.125rem;
+    margin: 20px;
+}
+
+/* Left column text content styling */
+#shop_text {
+    width: 65%;
+    float: left;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+}
+
+/* video box content styling */
+#video_layout {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    border: 3px inset rgb(95, 95, 95);
+}
+
+/* embedded video styling */
+#mainvid {
+    height: 200px;
+}
+
+/* table box styling */
+#shop_chart {
+    width: 35%;
+    float: right;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 3px outset black;
+    background-color: rgb(61, 60, 60);
+    box-shadow: 3px 3px 10px rgb(248, 248, 120);
+}
+
+/* table layout styling */
+#shop_table {
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    border: 1px solid white;
+    border-color: white;    
+}
+th {
+    text-align: center;
+    background-color: white;
+}
+td {
+    border: 1px solid white;
+    background-color: black;
+}

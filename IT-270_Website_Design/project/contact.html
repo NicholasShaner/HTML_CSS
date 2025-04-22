@@ -1,0 +1,87 @@
+<!-- contact.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>My Uncles Auto Shop | Shop Service</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="Img/favicon.png">
+    
+	<link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+
+</head>
+
+<body>
+    <header> <!-- common header used across all site pages with adapted styling for emphasis of current page nav link -->
+        <h1 id="head">Contact US</h1>
+        <h2 id="sub_head">Get In Touch With Us!</h2>
+        <div id="nav_bar">
+            <a href="index.html" style=" padding: 0 5px;">Home</a>
+            <a href="shop_serv.html" style=" padding: 0 5px;">In Shop</a>
+            <a href="mobile_serv.html" style=" padding: 0 5px;">Mobile</a>
+            <a href="fleet_serv.html" style=" padding: 0 5px;">Fleet</a>
+            <a href="about.html" style=" padding: 0 5px;">About</a>
+            <br>
+            <a href="contact.html" style="font-size: 1.8rem; font-weight: bold;">Contact Us For Service Inquiries</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="contact_form";> <!-- simple contact form -->
+            <br>
+            <div class="contact_form" id="my_info"> <!-- reiteration of contact info (phone number and business address) -->
+                Phone Number: 800-FIX-THIS (800-349-2441)<br>
+                Shop Address: 123 Junker Street, Pothole City, USA
+            </div><br>
+            
+            <!-- service request form -->
+            <form method="get" class="contact_form">
+                Name:
+                <input id="contact_name" type="text" placeholder="First and Last Name"/><br><br>
+                Phone Number: 
+                <input id="contact_tel" type="tel" placeholder="123-456-7890" /><br><br>
+                Email:
+                <input id="contact_email" type="email" placeholder="ex. myemail@email.com" /><br><br>
+                Preferred Contact:<br>
+                <select name="Contact" id="select">
+                    <option restrict>Select One:</option>
+                    <option>Phone</option>
+                    <option>Email</option>
+                </select>
+                <p>Explain to US about your concern or repair:</p>
+                <textarea placeholder="What's Going On?"></textarea><br><br>
+                Would You Like To Get Notification E-mails For Events and promotions?
+                <input type="checkbox" style="height: 20px; width: 20px;" checked/><br><br>
+            </form>
+                <!-- submit 'button' with onclick .js attribute to not crash page -->
+            <button onclick="thanks()" style="border-radius: 5px; font-size: 1.6rem;">Submit</button>
+            <!-- blank text field for JavaScript effects-->
+            <p id="hiddentxt" style="font-size: 5rem; font-style: italic; color: rgb(22, 209, 22); font-weight: 800; text-align: center;"> </p>
+            
+            <!-- JavaScript coding for alternative effect of 'Submit' button -->
+            <script>
+                function thanks() {
+                    document.getElementById("hiddentxt").innerHTML = "Thank You!";
+                }
+            </script>
+        </div>
+    </main>
+
+    <footer > <!-- common footer across all pages (copyright and redundant nav links) -->
+        <hr><br>
+        <div style="inline-block" class="redundant_nav">
+            <a href="index.html">Home</a>
+            <a href="shop_serv.html">In Shop</a>
+            <a href="mobile_serv.html">Mobile</a>
+            <a href="fleet_serv.html">Fleet</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        &copy; Nicholas Shaner IT-270 Oct. 2023
+    </footer>
+
+</body>
+</html>

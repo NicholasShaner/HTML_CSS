@@ -1,0 +1,74 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   */
+
+   /* HTML5 display-role reset for older browsers */
+   article, aside, details, figcaption, figure, 
+   footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+
+  /*background image and editing */
+  html {
+    background-image: url(/img/background_alt2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 155%;
+    background-attachment: fixed;
+      background-color: rgb(230, 220, 163);
+    
+    color: rgb(2, 2, 2);
+    font-weight: 1000;
+  }
+
+  body {
+    line-height: 1;
+  }
+
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+/*=========================================
+    Main Styles
+    =========================================*/
+ 
+    /*image 1 styling */
+    #penmen {
+      
+      text-align: center;
+      transform: rotate(-18deg);
+      
+    }
+
+    /*shadow styling */
+    #shadows {
+      text-shadow: 3px 3px 5px rgb(255, 86, 86), -3px -3px 5px rgb(239, 60, 255);
+      font-weight: 900;
+    }
+    body {
+      font-family: arial;
+      font-size: large;
+    }
+
+    .container {
+      width: 989px;
+      margin: 0 auto;
+    }
+
+    .footer {
+      text-align: center;
+    }

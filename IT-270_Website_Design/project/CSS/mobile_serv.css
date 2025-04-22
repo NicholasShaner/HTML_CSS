@@ -1,0 +1,49 @@
+/*mobile_serv.css*/
+
+/* mobile_serv page styling */
+.main_mobile {
+    border: 3px solid black;
+    margin: 20px;
+    padding: 1.125rem;
+    box-sizing: border-box;
+}
+
+/* left column text styling */
+#mobile_text { 
+    width: 65%;
+    float: left;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    padding-right: 10px;
+    text-align: center;
+}
+
+/* mobile_serv table box styling */
+#mobile_chart { 
+    width: 35%;
+    float: right;
+    box-sizing: border-box;
+    padding: 6px;
+    border: 3px outset black;
+    background-color: rgb(61, 60, 60);
+    box-shadow: 3px 3px 10px rgb(248, 248, 120);
+}
+
+/* table styling */
+#shop_table {
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    border: 1px solid white;
+    border-color: white;
+}
+th {
+    text-align: center;
+    background-color: white;
+    font-size: 1.6rem;
+}
+td {
+    border: 1px solid white;
+    background-color: black;
+}
+
+

@@ -1,0 +1,145 @@
+/*Main.CSS Stylesheet */
+
+/*Common Cross Page Styling*/
+
+
+/*Imported font family from font.google.com */
+@font-face {
+    src: url(/Fonts/Oswald_Light.ttf);
+    font-family: Oswald_Light;
+}
+@font-face {
+    src: url(/Fonts/Oswald_Regular.ttf);
+    font-family: Oswald_Regular;
+}
+
+/*Full page styling*/
+
+html {
+    font-family: Oswald_Regular, Arial, Helvetica, sans-serif;
+    max-width: 85rem;
+    margin: auto;
+}
+
+/*Content Styling*/
+
+/*Font color change to contrast dark background */
+body {
+    background-color: rgb(51, 51, 51);
+    color: tomato;
+    margin: 0;
+    height: 100%;
+    font-family: Oswald_Light, Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(/Img/car_banner.jpg);
+    background-repeat: none;
+    background-size: cover;
+    margin: auto, auto;
+    color: rgb(0, 0, 0);
+    border-bottom: 3px solid lightslategray;
+}
+
+/*Styling to page titles and keyframe grow effect on load */
+#head {
+    font-size: 4rem;
+    text-shadow: 3px 3px 5px tomato;
+    font-weight: 900;
+    animation-name: grow;
+    animation-duration: 2s;
+}
+@keyframes grow {
+    50%{transform: scale(1.5, 1.5);}
+}
+
+/*Color adjust of nav links and remove underlining for cleaner appearance*/
+header a{
+    color: rgb(41, 109, 165);
+    text-decoration: none;
+}
+
+/*Hover effect on nav links for style */
+a:hover {
+    text-shadow: 2px 2px 10px rgb(66, 65, 65);
+}
+
+#sub_head {
+    height: 2rem;
+}
+
+#nav_bar {
+    font-size: 1.3rem;
+    padding: 25px;
+}
+/*main element adjustment for page height and overflow*/
+main {    
+    overflow: auto;
+    padding-bottom: 25px;
+}
+
+footer {
+    font-family: Oswald_Light, Arial, Helvetica, sans-serif;
+    width: 100%;
+    max-width: 85rem;
+    max-height: 6rem;
+    text-align: center;
+    margin-top: auto;
+    padding-bottom: 18px;
+    clear: both;
+}
+
+/*Color adjust on redundant nav links to better contrast dark background for clarity */
+footer a {
+    color: rgb(67, 170, 255);
+}
+
+
+
+/*index.html (Homepage) Styling */
+
+/* styling for contact info at top of page */
+#maincontact {
+    color: rgba(255, 255, 255, 0.781);
+    font-style: italic;
+    font-size: 1.4rem;
+    border: 3px outset black;
+    padding: 5px;
+}
+
+/* styling and layout for main content and images */
+#maincontent {
+    width: 65%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 25px;
+    font-size: 2rem;
+    text-align: center;
+}
+#mainimage {
+    width: 35%;
+    float: right;
+    box-sizing: border-box;
+    padding-left: 45px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* image transformation and glow styling */
+#img1, #img2, #img3, #img4 {
+    height: 200px;
+    width: 200px;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px 10px rgb(248, 248, 120);
+    border-radius: 12px;
+}
+#img2 {
+    transform: rotateZ(30deg);
+}
+#img3 {
+    transform: rotateZ(-30deg);
+}
